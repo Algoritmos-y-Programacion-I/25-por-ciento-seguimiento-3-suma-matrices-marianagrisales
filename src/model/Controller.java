@@ -49,6 +49,10 @@ public class Controller {
         return matriz2;
     }
 
+    public MatrizNumerica sumaMatrices(){
+        return MatrizNumerica.sumaMatrices(matriz2, matriz1);
+    }
+
 
 
 

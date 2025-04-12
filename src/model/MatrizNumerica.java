@@ -20,5 +20,19 @@ public class MatrizNumerica {
         return matriz;
     }
 
+    public static MatrizNumerica sumaMatrices(MatrizNumerica m1, MatrizNumerica m2){
+        int filas = m1.cantFilas;
+        int columnas = m1.cantColumnas;
+        MatrizNumerica resultado = new MatrizNumerica(filas, columnas);
+
+        for(int i = 0; i < filas; i++) {
+            for(int j = 0; j < columnas; j++){
+                int suma = m1.matriz[i][j] + m2.matriz[i][j];
+                resultado.insertarValor(i, j, suma);
+            }
+        }
+        return resultado;
+    }
+
 
 }
